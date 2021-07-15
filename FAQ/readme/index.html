@@ -1,0 +1,886 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://example.com/FAQ/readme/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>QA - My Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#faq" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Notes" class="md-header__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              QA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    My Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        bert
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          QA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        QA
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    一、动机
+  </a>
+  
+    <nav class="md-nav" aria-label="一、动机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1 问答系统的动机？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2 问答系统 是什么？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq_1" class="md-nav__link">
+    二、FAQ 检索式问答系统介绍篇
+  </a>
+  
+    <nav class="md-nav" aria-label="二、FAQ 检索式问答系统介绍篇">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-faq" class="md-nav__link">
+    2.1 FAQ 检索式问答系统 是 什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-query-qa" class="md-nav__link">
+    2.2 query 匹配标准 QA 的核心是什么?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq_2" class="md-nav__link">
+    三、FAQ 检索式问答系统 方案篇
+  </a>
+  
+    <nav class="md-nav" aria-label="三、FAQ 检索式问答系统 方案篇">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 常用 方案有哪些？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-qq" class="md-nav__link">
+    3.2 为什么 QQ 匹配比较常用？
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 为什么 QQ 匹配比较常用？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-qq" class="md-nav__link">
+    3.2.1 QQ 匹配的优点有哪些？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-qq" class="md-nav__link">
+    3.2.2 QQ 匹配的语义空间是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-qq" class="md-nav__link">
+    3.2.3 QQ 匹配的语料的稳定性是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-qq" class="md-nav__link">
+    3.2.4 QQ 匹配的业务回答与算法模型的解耦是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#325-qq" class="md-nav__link">
+    3.2.5 QQ 匹配的新问题发现与去重是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#326-qq" class="md-nav__link">
+    3.2.6 QQ 匹配的上线运行速度是什么？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-qq" class="md-nav__link">
+    3.3  QQ 匹配一般处理流程是怎么样？ 【假设 标准问题库 已处理好】
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq_3" class="md-nav__link">
+    四、FAQ 标准问题库构建篇
+  </a>
+  
+    <nav class="md-nav" aria-label="四、FAQ 标准问题库构建篇">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-faq" class="md-nav__link">
+    4.1 如何发现 FAQ 中标准问题？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-faq" class="md-nav__link">
+    4.2 FAQ 如何做拆分？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-faq" class="md-nav__link">
+    4.3 FAQ 如何做合并？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-faq" class="md-nav__link">
+    4.4 FAQ 标准库如何实时更新？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq_4" class="md-nav__link">
+    五、FAQ 标准问题库答案优化篇
+  </a>
+  
+    <nav class="md-nav" aria-label="五、FAQ 标准问题库答案优化篇">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-faq" class="md-nav__link">
+    5.1 FAQ 标准问题库答案如何优化？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    参考
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    一、动机
+  </a>
+  
+    <nav class="md-nav" aria-label="一、动机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1 问答系统的动机？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2 问答系统 是什么？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq_1" class="md-nav__link">
+    二、FAQ 检索式问答系统介绍篇
+  </a>
+  
+    <nav class="md-nav" aria-label="二、FAQ 检索式问答系统介绍篇">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-faq" class="md-nav__link">
+    2.1 FAQ 检索式问答系统 是 什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-query-qa" class="md-nav__link">
+    2.2 query 匹配标准 QA 的核心是什么?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq_2" class="md-nav__link">
+    三、FAQ 检索式问答系统 方案篇
+  </a>
+  
+    <nav class="md-nav" aria-label="三、FAQ 检索式问答系统 方案篇">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 常用 方案有哪些？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-qq" class="md-nav__link">
+    3.2 为什么 QQ 匹配比较常用？
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 为什么 QQ 匹配比较常用？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-qq" class="md-nav__link">
+    3.2.1 QQ 匹配的优点有哪些？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-qq" class="md-nav__link">
+    3.2.2 QQ 匹配的语义空间是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-qq" class="md-nav__link">
+    3.2.3 QQ 匹配的语料的稳定性是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-qq" class="md-nav__link">
+    3.2.4 QQ 匹配的业务回答与算法模型的解耦是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#325-qq" class="md-nav__link">
+    3.2.5 QQ 匹配的新问题发现与去重是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#326-qq" class="md-nav__link">
+    3.2.6 QQ 匹配的上线运行速度是什么？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-qq" class="md-nav__link">
+    3.3  QQ 匹配一般处理流程是怎么样？ 【假设 标准问题库 已处理好】
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq_3" class="md-nav__link">
+    四、FAQ 标准问题库构建篇
+  </a>
+  
+    <nav class="md-nav" aria-label="四、FAQ 标准问题库构建篇">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-faq" class="md-nav__link">
+    4.1 如何发现 FAQ 中标准问题？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-faq" class="md-nav__link">
+    4.2 FAQ 如何做拆分？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-faq" class="md-nav__link">
+    4.3 FAQ 如何做合并？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-faq" class="md-nav__link">
+    4.4 FAQ 标准库如何实时更新？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq_4" class="md-nav__link">
+    五、FAQ 标准问题库答案优化篇
+  </a>
+  
+    <nav class="md-nav" aria-label="五、FAQ 标准问题库答案优化篇">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-faq" class="md-nav__link">
+    5.1 FAQ 标准问题库答案如何优化？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    参考
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="faq">【关于 FAQ 检索式问答系统】 那些你不知道的事<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
+<p><img alt="" src="../img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210206162253.png" /></p>
+<h2 id="_1">一、动机<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 问答系统的动机？<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>场景：假设 你有 一个 标准的问题库，此时 有一个 新 query 进来，你会做什么操作？</p>
+</li>
+<li>
+<p>灵魂三连问：</p>
+</li>
+<li>如何根据 这个 query，你怎么返回一个标准答案呢？</li>
+<li>如何从 问题库 里面找 答案？</li>
+<li>如何 判断 你 找到 答案 是 对的？</li>
+</ul>
+<h3 id="12">1.2 问答系统 是什么？<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>介绍：问答系统是信息检索的一种高级形式，能够更加准确地理解用户用自然语言提出的问题，并通过检索语料库、知识图谱或问答知识库返回简洁、准确的匹配答案。相较于搜索引擎，问答系统能更好地理解用户提问的真实意图, 进一步能更有效地满足用户的信息需求。</li>
+<li>目标对象：用户输入的 query 和 答案；</li>
+<li>领域类型分类：</li>
+<li>面向限定域的问答系统；</li>
+<li>面向开放域的问答系统；</li>
+<li>面向常用问题集的问答系统；</li>
+<li>根据答案来源分类：</li>
+<li>基于结构化数据的问答系统（eg：KBQA）；</li>
+<li>基于文本的问答系统（eg：阅读理解）;</li>
+<li>基于问答对的问答系统（eg：FAQ）;</li>
+<li>答案的反馈机制分类：</li>
+<li>基于检索式的问答系统；</li>
+<li>基于生成式的问答系统；</li>
+</ul>
+<h2 id="faq_1">二、FAQ 检索式问答系统介绍篇<a class="headerlink" href="#faq_1" title="Permanent link">&para;</a></h2>
+<h3 id="21-faq">2.1 FAQ 检索式问答系统 是 什么？<a class="headerlink" href="#21-faq" title="Permanent link">&para;</a></h3>
+<ul>
+<li>名称：（Frequently asked Questions），是检索式问答系统</li>
+<li>目标：给定 标准问题库，匹配与用户输入 query 最相近的问题并返回答案；</li>
+<li>流程：</li>
+<li>分析 用户输入 的 query;</li>
+<li>计算 与 query 最相近 的 标准问题；</li>
+<li>做 Rank，并 取 Top1 的 标准问题；</li>
+<li>返回 Top1 的 标准问题的答案；</li>
+</ul>
+<p><img alt="" src="../img/20200904112045.png" /></p>
+<h3 id="22-query-qa">2.2 query 匹配标准 QA 的核心是什么?<a class="headerlink" href="#22-query-qa" title="Permanent link">&para;</a></h3>
+<ul>
+<li>核心组成</li>
+<li>用户输入 的 query 和 标准问题 的 的相似度；<ul>
+<li>常用方法：</li>
+<li>关键字匹配；</li>
+<li>TF-idf 相似度计算；</li>
+</ul>
+</li>
+<li>用户输入 的 query 和 标准答案 的 匹配度；<ul>
+<li>常用方法：</li>
+<li>DL 模型 相似度计算；</li>
+<li>Bert 句向量 语义相似度计算；</li>
+</ul>
+</li>
+</ul>
+<h2 id="faq_2">三、FAQ 检索式问答系统 方案篇<a class="headerlink" href="#faq_2" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 常用 方案有哪些？<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<ul>
+<li>方案一：QA 匹配：输入Query与候选的所有Answer 计算相似度，去找哪一个最合适</li>
+<li>方案二：QQ 匹配：输入Query与历史语料库里的Query去找哪一个最相似，然后把找到的query对应的Answer取出即可；【常用】</li>
+</ul>
+<h3 id="32-qq">3.2 为什么 QQ 匹配比较常用？<a class="headerlink" href="#32-qq" title="Permanent link">&para;</a></h3>
+<h4 id="321-qq">3.2.1 QQ 匹配的优点有哪些？<a class="headerlink" href="#321-qq" title="Permanent link">&para;</a></h4>
+<ul>
+<li>原因 1：语义空间</li>
+<li>原因 2：语料的稳定性</li>
+<li>原因 3：业务回答与算法模型的解耦</li>
+<li>原因 4：新问题发现与去重</li>
+<li>原因 5：新问题发现与去重</li>
+</ul>
+<h4 id="322-qq">3.2.2 QQ 匹配的语义空间是什么？<a class="headerlink" href="#322-qq" title="Permanent link">&para;</a></h4>
+<ul>
+<li>介绍：<strong>问题和问题的语义空间是一致的，而问题与回答的语义空间可能是不一致的。</strong></li>
+<li>分析：假设对于一个 医疗FAQ系统，query 主要来自于患者的问题，而患者间对于问题的出发点和形式是一样的，但是 Answer 主要来自于 医生，而医生的回答相对于 专业化，所以在语义空间上就与用户的问题有着明显的不同。而这个语义空间的不一致性会极大影响算法的选择与学习。</li>
+<li>举例：</li>
+<li>深度学习方法：句子相似度典型算法中以两侧向量相似度为目标和损失函数的孪生网络算法（Siamese network系列）就需要两边的语义空间一样，两边抽取特征的网络结构和参数也是共享的。而其他任务的匹配算法，如推理SLI任务往往就不是参数共享的，且往往需要额外的一个交互映射层来完成两边句子表示的语义映射关系。</li>
+<li>传统手工特征：那么句法树的解析出的中心节点是否相同，两句子的编辑距离大小，两句子的关键词overlap情况，这些特征在相似问题判断时会有更好的体现，且具有很高的可解释性（比如编辑距离越小，越可能是同一个意思）。而QA Match 在特征抽取上就会受限很多。</li>
+</ul>
+<h4 id="323-qq">3.2.3 QQ 匹配的语料的稳定性是什么？<a class="headerlink" href="#323-qq" title="Permanent link">&para;</a></h4>
+<ul>
+<li>介绍：问题遵循一个固定的状态，而回答容易随着业务的发展发生变化，所以采用 QQ 效果更好</li>
+</ul>
+<h4 id="324-qq">3.2.4 QQ 匹配的业务回答与算法模型的解耦是什么？<a class="headerlink" href="#324-qq" title="Permanent link">&para;</a></h4>
+<ul>
+<li>介绍：把问题与回答分离，只对问题建模，可以将算法模型的学习与业务方编辑的答案充分解耦，让不同问题与回答之间的映射比较随意可控；</li>
+</ul>
+<h4 id="325-qq">3.2.5 QQ 匹配的新问题发现与去重是什么？<a class="headerlink" href="#325-qq" title="Permanent link">&para;</a></h4>
+<ul>
+<li>介绍：FAQ的系统在构建好后，并不会是一成不变的，因为公司的业务需要也还是在不断发生变化和增长，用户会有新的频繁需要询问的问题，或者其实有些问题跟已有的问题其实是一致的，或者历史上配置的问题其实是不必要的。</li>
+</ul>
+<h4 id="326-qq">3.2.6 QQ 匹配的上线运行速度是什么？<a class="headerlink" href="#326-qq" title="Permanent link">&para;</a></h4>
+<ul>
+<li>动机：如果使用QA Match的话，如果FAQ语料库的候选很大，即A有很多的话，那么在线上预测的时候，就会存在一个问题，进来的问题需要和那么多的A分别去做Match，（假设有1000条A，那么就需要执行QA Match模型1000次）虽然可以使用Batch机制来批量match，但始终整体的计算资源消耗和计算速度是比较大的。</li>
+<li>做法：如果使用问题与问题相似的思路，那么就可以提前把历史文本语料索引在Elastic search这样的搜索引擎中，或者可以把相似模型对于问题的建模稠密向量用Faiss或者annoy工具索引起来。当来了一个新问题的时候，就通过索引去搜索召回出历史语料中比较粗粒度的最相似TopK（这个时候TopK就可以降低到10或者20）问题即可，然后再用精细化的耗时的复杂语义模型去进一步匹配，就可以节约很多的计算资源和提高速度。</li>
+</ul>
+<h3 id="33-qq">3.3  QQ 匹配一般处理流程是怎么样？ 【假设 标准问题库 已处理好】<a class="headerlink" href="#33-qq" title="Permanent link">&para;</a></h3>
+<ol>
+<li>数据清洗：用户 query 数据清洗；</li>
+<li>文本纠正：利用 纠错表 或 pycorrector 对 query 进行 纠错处理；</li>
+<li>意图识别：利用 意图分类模型 进行分类，确定 query 意图；【第一层粗召】</li>
+<li>Embedding 表示：文本等通过某种方式进行向量化表示（word2vec、doc2vec、elmo、bert等）；</li>
+<li>语义召回：用户 query 特征向量进行索引（faiss/Milus) ，找到 一定数量 相似的 标准问题 ；</li>
+<li>多路召回：<ol>
+<li>关键词召回：可以利用 ES 计算 关键词相似度；</li>
+<li>ML 语义相似度召回：利用 TF-idf、ngram+TF-idf计算相似度；</li>
+<li>DL 语义相似度召回：DSSM、ESIM 等深度模型 计算相似度；</li>
+</ol>
+</li>
+<li>问题答案获取：各相似度加权求和，精排，取 Top 作为 问题答案；</li>
+</ol>
+<p><img alt="" src="../img/FAQ.png" /></p>
+<h2 id="faq_3">四、FAQ 标准问题库构建篇<a class="headerlink" href="#faq_3" title="Permanent link">&para;</a></h2>
+<h3 id="41-faq">4.1 如何发现 FAQ 中标准问题？<a class="headerlink" href="#41-faq" title="Permanent link">&para;</a></h3>
+<ul>
+<li>s1：对 问题库 中的问题进行预处理；</li>
+<li>s2：将 问题库 中的问题向量化；</li>
+<li>s3：对 问题库 进行聚类；</li>
+<li>s4：对比已有的FAQ，发现并补足未覆盖的知识点。将FAQ与知识点一一对应</li>
+</ul>
+<h3 id="42-faq">4.2 FAQ 如何做拆分？<a class="headerlink" href="#42-faq" title="Permanent link">&para;</a></h3>
+<ul>
+<li>FAQ拆分：当一个FAQ里包含多个意图或者说多种情况的时候，需要对触达率较高的FAQ进行自动分析，聚类FAQ对应的问句，按照意图将其拆分开来；</li>
+</ul>
+<h3 id="43-faq">4.3 FAQ 如何做合并？<a class="headerlink" href="#43-faq" title="Permanent link">&para;</a></h3>
+<ul>
+<li>FAQ 的最终目标：用户的每一个意图都能对应到唯一的FAQ，这样用户每次提问的时候，可能会出现以下两种情况：</li>
+<li>一一对应：后台能够根据意图对应的FAQ直接给出一个直接的回答；</li>
+<li>模糊回复：当用户的提问，所对应的多个FAQ意思过于相近，那么当用户问到相关问题时，就不会出现一个直接的回答，而是多个意图相关的推荐问题，此时，需要用户选择比较符合的回答，后台需要对触达率较高的FAQ进行自动分析，分析哪一些问句总是被推荐相同的答案，将问句对应的意图合并。</li>
+</ul>
+<h3 id="44-faq">4.4 FAQ 标准库如何实时更新？<a class="headerlink" href="#44-faq" title="Permanent link">&para;</a></h3>
+<ul>
+<li>淘汰机制：后台需要定期分析历史日志，采用淘汰机制淘汰废弃知识点，如已下线业务知识点等。</li>
+</ul>
+<h2 id="faq_4">五、FAQ 标准问题库答案优化篇<a class="headerlink" href="#faq_4" title="Permanent link">&para;</a></h2>
+<h3 id="51-faq">5.1 FAQ 标准问题库答案如何优化？<a class="headerlink" href="#51-faq" title="Permanent link">&para;</a></h3>
+<ul>
+<li>挖掘对话，进行答案优化：如果机器人已经正确识别意图但最后仍然转人工，说明知识库的答案不对，需要进一步修正这一类知识点相对应的答案。</li>
+<li>分析头部场景，回答应用文本、图片、自动化解决方案等多元化方式：比如在电商场景中，经常会有查询发货到货时间、订单状态等的场景。利用图示指引、具体订单处理等方式让用户操作更便捷。</li>
+</ul>
+<h2 id="_2">参考<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="https://github.com/km1994/nlp_paper_study/blob/master/QA_study/FAQ.md">【FAQ 检索式问答系统】 那些你不知道的事</a></li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: bert" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              bert
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+    
+  </body>
+</html>
