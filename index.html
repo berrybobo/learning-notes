@@ -1,0 +1,579 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://example.com/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>My Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bert" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="My Notes" class="md-header__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    My Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bert" class="md-nav__link">
+    使用Bert做命名实体识别
+  </a>
+  
+    <nav class="md-nav" aria-label="使用Bert做命名实体识别">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-bert-transformer" class="md-nav__link">
+    1 bert 结构 transformer 及下游任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2  命名实体识别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-bert" class="md-nav__link">
+    3 BERT源码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-processor" class="md-nav__link">
+    4 修改 processor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-bert" class="md-nav__link">
+    5 bert模型输入输出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6 训练及预测用法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-re" class="md-nav__link">
+    7 关系抽取RE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-github" class="md-nav__link">
+    8 github相关项目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    9 博客
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bert" class="md-nav__link">
+    使用Bert做命名实体识别
+  </a>
+  
+    <nav class="md-nav" aria-label="使用Bert做命名实体识别">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-bert-transformer" class="md-nav__link">
+    1 bert 结构 transformer 及下游任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2  命名实体识别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-bert" class="md-nav__link">
+    3 BERT源码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-processor" class="md-nav__link">
+    4 修改 processor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-bert" class="md-nav__link">
+    5 bert模型输入输出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6 训练及预测用法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-re" class="md-nav__link">
+    7 关系抽取RE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-github" class="md-nav__link">
+    8 github相关项目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    9 博客
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Home</h1>
+                
+                <h2 id="bert">使用Bert做命名实体识别<a class="headerlink" href="#bert" title="Permanent link">&para;</a></h2>
+<p><a href="https://zhuanlan.zhihu.com/p/156914795"><strong>中文命名实体识别NER的原理、方法与工具</strong></a></p>
+<h3 id="1-bert-transformer">1 bert 结构 transformer 及下游任务<a class="headerlink" href="#1-bert-transformer" title="Permanent link">&para;</a></h3>
+<p><img alt="1600483895456" src="biji.assets/1600483895456.png" /></p>
+<p><img alt="1600501524179" src="biji.assets/1600501524179.png" /></p>
+<p><img alt="1600502185790" src="biji.assets/1600502185790.png" /></p>
+<p><img alt="1600504206177" src="biji.assets/1600504206177.png" /></p>
+<p><img alt="1600504438161" src="biji.assets/1600504438161.png" /></p>
+<p><img alt="1600504338937" src="biji.assets/1600504338937.png" /></p>
+<p><img alt="1600932850171" src="biji.assets/1600932850171.png" /></p>
+<p><img alt="preview" src="https://pic3.zhimg.com/v2-c101ddc3b2f4dbd3dc20999f900c71ba_r.jpg" /></p>
+<p><strong>transformer解决RNN的问题：顺序依赖，无法并行和单向信息流</strong></p>
+<p><img alt="image-20201009132057293" src="biji.assets/image-20201009132057293.png" /></p>
+<p>BERT 的全称是基于 Transformer 的双向编码器表征，其中「双向」表示模型在处理某一个词时，它能同时利用前面的词和后面的词两部分信息。这种「双向」的来源在于 BERT 与传统语言模型不同，它不是在给定所有前面词的条件下预测最可能的当前词，而是随机遮掩一些词，并利用所有没被遮掩的词进行预测。下图展示了三种型，其中 BERT 和 ELMo 都使用双向信息，OpenAI GPT 使用单向信息。</p>
+<p><img alt="image-20201013162811676" src="biji.assets/image-20201013162811676.png" /></p>
+<p>BERT 可以视为结合了 OpenAI GPT 和 ELMo 优势的新模型。其中 ELMo 使用两条独立训练的 LSTM 获取双向信息，而 OpenAI GPT 使用新型的 Transformer 和经典语言模型只能获取单向信息。BERT 的主要目标是在 OpenAI GPT 的基础上对预训练任务做一些改进，以同时利用 Transformer 深度模型与双向信息的优势。</p>
+<h3 id="2">2  <strong>命名实体识别</strong><a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>（Named Entity Recognition，<strong>NER</strong> ）是NLP中一项非常基础的任务。</p>
+<p>NER是信息提取、问答系统、句法分析、机器翻译等众多NLP任务的重要基础工具。 </p>
+<p>鉴于BERT的强大，在下游任务中，引入BERT是很自然的想法。基于谷歌开源出来的BERT base模型，进行fine tune，做NER任务。 </p>
+<p><img alt="img" src="biji.assets/9419034-033001a7bb921cfa.png" /></p>
+<p><strong>命名实体识别的数据标注方式</strong></p>
+<p>NER是一种序列标注问题，因此他们的数据标注方式也遵照序列标注问题的方式，主要是BIO和BIOES两种。这里直接介绍BIOES，明白了BIOES，BIO也就掌握了。</p>
+<p>BIOES：</p>
+<p>B，即Begin，表示开始</p>
+<p>I，即Intermediate，表示中间</p>
+<p>E，即End，表示结尾</p>
+<p>S，即Single，表示单个字符</p>
+<p>O，即Other，表示其他，用于标记无关字符</p>
+<p>将“小明在北京大学的燕园看了中国男篮的一场比赛”这句话，进行标注，结果就是：</p>
+<p>[B-PER，E-PER，O, B-ORG，I-ORG，I-ORG，E-ORG，O，B-LOC，E-LOC，O，O，B-ORG，I-ORG，I-ORG，E-ORG，O，O，O，O]</p>
+<h3 id="3-bert">3 BERT源码<a class="headerlink" href="#3-bert" title="Permanent link">&para;</a></h3>
+<p>可以从google-research的github中获取：</p>
+<p><a href="https://github.com/google-research/bert">https://github.com/google-research/bert</a></p>
+<p>取BERT Chinese的预训练模型：</p>
+<p><a href="https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip">https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip</a></p>
+<p>对下载的压缩文件进行解压，可以看到文件里有五个文件，其中bert_model.ckpt开头的文件是负责模型变量载入的，而vocab.txt是训练时中文文本采用的字典，最后bert_config.json是BERT在训练时，可选调整的一些参数。</p>
+<p><img alt="1602156265622" src="biji.assets/1602156265622.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="s2">&quot;attention_probs_dropout_prob&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span> <span class="c1">#乘法attention时，softmax后dropout概率 </span>
+<span class="s2">&quot;hidden_act&quot;</span><span class="p">:</span> <span class="s2">&quot;gelu&quot;</span><span class="p">,</span> <span class="c1">#激活函数 </span>
+<span class="s2">&quot;hidden_dropout_prob&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span> <span class="c1">#隐藏层dropout概率 </span>
+<span class="s2">&quot;hidden_size&quot;</span><span class="p">:</span> <span class="mi">768</span><span class="p">,</span> <span class="c1">#隐藏单元数 </span>
+<span class="s2">&quot;initializer_range&quot;</span><span class="p">:</span> <span class="mf">0.02</span><span class="p">,</span> <span class="c1">#初始化范围 </span>
+<span class="s2">&quot;intermediate_size&quot;</span><span class="p">:</span> <span class="mi">3072</span><span class="p">,</span> <span class="c1">#升维维度</span>
+<span class="s2">&quot;max_position_embeddings&quot;</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span><span class="c1">#一个大于seq_length的参数，用于生成position_embedding &quot;num_attention_heads&quot;: 12, #每个隐藏层中的attention head数 </span>
+<span class="s2">&quot;num_hidden_layers&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="c1">#隐藏层数 </span>
+<span class="s2">&quot;type_vocab_size&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="c1">#segment_ids类别 [0,1] </span>
+<span class="s2">&quot;vocab_size&quot;</span><span class="p">:</span> <span class="mi">30522</span> <span class="c1">#词典中词数</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>BERT的代码主要分为两个部分：</p>
+<p><img alt="1602156304348" src="biji.assets/1602156304348.png" /></p>
+<p><img alt="image-20201011215844071" src="biji.assets/image-20201011215844071.png" /></p>
+<p>1.<strong><code>预训练部分</code></strong>，其入口是在run_pretraining.py。</p>
+<p>2.<strong><code>Fine-tune部分</code></strong>。Fine-tune的入口针对不同的任务分别在run_classifier.py和run_squad.py。其中run_classifier.py适用的任务为分类任务，如CoLA、MRPC、MultiNLI等。而run_squad.py适用的是阅读理解任务，如squad2.0和squad1.1。</p>
+<p>NER任务与分类任务很接近，基于run_classsifier.py做一些修改，得到BERT_NER.py文件</p>
+<h3 id="4-processor">4 修改 processor<a class="headerlink" href="#4-processor" title="Permanent link">&para;</a></h3>
+<p>任何模型的训练、预测都是需要有一个明确的输入，而BERT代码中processor就是负责对模型的输入进行处理。</p>
+<p>在run_classsifier.py文件中我们可以看到，Google对于一些公开数据集已经写了一些processor，如XnliProcessor，MnliProcessor，MrpcProcessor和ColaProcessor。这给我们提供了一个很好的示例，指导我们如何针对自己的数据集来写processor。</p>
+<p>参照上述的Processor，结合NER任务的特点，我们需要定义一个NerProcessor来处理NER标记语料，主要的工作就是将语料组织成Estimator能够接受的格式。主要就是实现_read_data，_create_example和get_labels三个函数。</p>
+<p>实现如下形式的_create_example函数，它读取语料和标记，并且通过InputExample函数，构造成Estimator能够接受的格式。</p>
+<p><img alt="image-20201011211952850" src="biji.assets/image-20201011211952850.png" /></p>
+<p><img alt="image-20201011212023622" src="biji.assets/image-20201011212023622.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">_create_example</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lines</span><span class="p">,</span> <span class="n">set_type</span><span class="p">):</span>
+  <span class="n">examples</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+    <span class="n">guid</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">set_type</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">tokenization</span><span class="o">.</span><span class="n">convert_to_unicode</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">tokenization</span><span class="o">.</span><span class="n">convert_to_unicode</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">examples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">InputExample</span><span class="p">(</span><span class="n">guid</span><span class="o">=</span><span class="n">guid</span><span class="p">,</span>   <span class="n">text</span><span class="o">=</span><span class="n">text</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">))</span>
+  <span class="k">return</span> <span class="n">examples</span>
+</code></pre></div>
+
+<h3 id="5-bert">5 bert模型输入输出<a class="headerlink" href="#5-bert" title="Permanent link">&para;</a></h3>
+<p>BERT模型的主要输入是文本中各个字/词的原始词向量，该向量既可以随机初始化，也可以利用Word2Vector等算法进行预训练以作为初始值；输出是文本中各个字/词融合了全文语义信息后的向量表示。</p>
+<p><img alt="img" src="biji.assets/461tydo245.jpeg" /></p>
+<p><strong>注意</strong></p>
+<p>输入 max_seq_length = 128  长短不一：超过128的舍去，不足的补0</p>
+<p><strong>模型输入</strong></p>
+<p><img alt="bert模型输入" src="https://img-blog.csdnimg.cn/20200316001247582.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3RyeWxs,size_16,color_FFFFFF,t_70" /></p>
+<ol>
+<li>
+<p>Token embedding 表示当前词的embedding</p>
+</li>
+<li>
+<p>Segment Embedding 表示当前词所在句子的index embedding</p>
+</li>
+<li>
+<p>Position Embedding 表示当前词所在位置的index embedding</p>
+</li>
+</ol>
+<p>BERT各组成部分含义，词向量（token embeddings）、段向量(segment embeddings)、位置向量(position embeddings)</p>
+<p><strong>词向量</strong>：是模型中关于词最主要的信息
+<strong>段向量</strong>：是因为BERT里面的下一句的预测任务，所以会有两句拼接起来，上句与下句，上句有上句段向量，下句则有下句段向量，也就是图中A与B。此外，句子末尾都有加[SEP]结尾符，两句拼接开头有[CLS]符   单句子任务只有开头和结束分割标志      </p>
+<p>头尾是[CLS]和[SEP]的向量</p>
+<p><strong>位置向量</strong>：Transformer 模型不能记住时序，需要人为加入表示位置的向量，之后这三个向量拼接起来的输入会喂入BERT模型，输出各个位置的表示向量</p>
+<p><strong>模型输出</strong></p>
+<p>bert模型的输出，使用 model.get_sequence_output()和model.get_pooled_output() 两个方法</p>
+<p>针对中文ner任务，采用序列输出   output_layer = model.get_sequence_output()</p>
+<p>可以获取每个token的output 输出[batch_size, seq_length, embedding_size] </p>
+<p><img alt="image-20201011225435763" src="biji.assets/image-20201011225435763.png" /></p>
+<p><strong>fine-tuning操作</strong></p>
+<p>当得到所有token的最后层transformer输出，喂给softmax层做分类。</p>
+<p><img alt="image-20201014124155747" src="biji.assets/image-20201014124155747.png" /></p>
+<h3 id="6">6 训练及预测用法<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20201014150959083" src="biji.assets/image-20201014150959083.png" /></p>
+<p>train训练</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">python</span> <span class="n">BERT_NER</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">data_dir</span><span class="o">=</span><span class="n">data</span><span class="o">/</span> <span class="o">--</span><span class="n">bert_config_file</span><span class="o">=</span><span class="n">checkpoint</span><span class="o">/</span><span class="n">bert_config</span><span class="o">.</span><span class="n">json</span> <span class="o">--</span><span class="n">init_checkpoint</span><span class="o">=</span><span class="n">checkpoint</span><span class="o">/</span><span class="n">bert_model</span><span class="o">.</span><span class="n">ckpt</span> <span class="o">--</span><span class="n">vocab_file</span><span class="o">=</span><span class="n">vocab</span><span class="o">.</span><span class="n">txt</span> <span class="o">--</span><span class="n">output_dir</span><span class="o">=./</span><span class="n">output</span><span class="o">/</span><span class="n">result_dir</span><span class="o">/</span>
+</code></pre></div>
+<img alt="" src="biji.assets/image-20201011194432628.png" /></p>
+<p>predict预测</p>
+<div class="highlight"><pre><span></span><code><span class="n">python</span> <span class="n">BERT_NER</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">data_dir</span><span class="o">=</span><span class="n">data</span><span class="o">/</span> <span class="o">--</span><span class="n">bert_config_file</span><span class="o">=</span><span class="n">checkpoint</span><span class="o">/</span><span class="n">bert_config</span><span class="o">.</span><span class="n">json</span> <span class="o">--</span><span class="n">init_checkpoint</span><span class="o">=</span><span class="n">checkpoint</span><span class="o">/</span><span class="n">bert_model</span><span class="o">.</span><span class="n">ckpt</span> <span class="o">--</span><span class="n">vocab_file</span><span class="o">=</span><span class="n">vocab</span><span class="o">.</span><span class="n">txt</span> <span class="o">--</span><span class="n">output_dir</span><span class="o">=./</span><span class="n">output</span><span class="o">/</span><span class="n">result_dir</span><span class="o">/</span> <span class="o">--</span><span class="n">do_train</span><span class="o">=</span><span class="kc">False</span> <span class="o">--</span><span class="n">do_eval</span><span class="o">=</span><span class="kc">True</span> <span class="o">--</span><span class="n">do_predict</span><span class="o">=</span><span class="kc">True</span>
+</code></pre></div>
+
+<p><img alt="image-20201011221136884" src="biji.assets/image-20201011221136884.png" /></p>
+<p><img alt="image-20201011221529260" src="biji.assets/image-20201011221529260.png" /></p>
+<h3 id="7-re">7 关系抽取RE<a class="headerlink" href="#7-re" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20201012181356207" src="biji.assets/image-20201012181356207.png" /></p>
+<h3 id="8-github">8 github相关项目<a class="headerlink" href="#8-github" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/liuhuanyong/MedicalNamedEntityRecognition">中文电子病例命名实体识别项目</a></li>
+<li><a href="https://github.com/luopeixiang/named_entity_recognition">中文命名实体识别，HMM，CRF，BiLSTM，BiLSTM+CRF的具体实现</a></li>
+<li><a href="https://github.com/F-debug/Medical-named-entity-recognition">针对医疗数据进行命名实体识别</a></li>
+<li><a href="https://github.com/StanleyLsx/entity_extractor_by_binary_tagging">短实体，长句实体抽取</a></li>
+<li><a href="https://github.com/xuanzebi/BERT-CH-NER#%E6%80%BB%E7%BB%93">基于BERT的中文命名实体识别</a></li>
+<li><a href="https://github.com/ProHiryu/albert-chinese-ner">albert-chinese-ner使用预训练语言模型ALBERT做中文NER</a></li>
+</ul>
+<h3 id="9">9 博客<a class="headerlink" href="#9" title="Permanent link">&para;</a></h3>
+<p><a href="https://blog.csdn.net/macanv/article/details/85684284">基于BERT预训练的中文命名实体识别TensorFlow实现</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1389555">图解BERT模型：从零开始构建BERT</a></p>
+<p><a href="https://blog.csdn.net/qqywm/article/details/85454531?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param">bert代码解读2之完整模型解读</a></p>
+<p><a href="https://blog.csdn.net/jiaowoshouzi/article/details/89073944">一文读懂BERT(原理篇)</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+    
+  </body>
+</html>
