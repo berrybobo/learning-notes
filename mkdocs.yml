@@ -1,7 +1,9 @@
 site_name: My Notes
 site_url: https://example.com/
 dev_addr: '127.0.0.1:80' #默认值
-
+nav:
+- bert: index.md
+- QA: FAQ/readme.md
 theme:
   name: material
 markdown_extensions:
