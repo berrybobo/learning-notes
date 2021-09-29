@@ -1,0 +1,897 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://example.com/Algorithmic/%E9%9D%A2%E8%AF%95%E9%87%8D%E7%82%B9/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>Algorithmic interview - My Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Notes" class="md-header__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Algorithmic interview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    My Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        bert
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/readme/" class="md-nav__link">
+        QA
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Algorithmic interview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Algorithmic interview
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    深度学习
+  </a>
+  
+    <nav class="md-nav" aria-label="深度学习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    模型评估方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    基本方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    优化方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    深度学习基础
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnn" class="md-nav__link">
+    CNN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnn" class="md-nav__link">
+    RNN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    机器学习
+  </a>
+  
+    <nav class="md-nav" aria-label="机器学习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    基础
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    集成学习
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    特征工程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    其他（分方向）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    数据结构与算法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    二叉树类
+  </a>
+  
+    <nav class="md-nav" aria-label="二叉树类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    搜索回溯
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    概率题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    动态规划
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    字符串
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    数组、二分、快排系列
+  </a>
+  
+    <nav class="md-nav" aria-label="数组、二分、快排系列">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    链表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    排序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    海量数据题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    深度学习
+  </a>
+  
+    <nav class="md-nav" aria-label="深度学习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    模型评估方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    基本方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    优化方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    深度学习基础
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnn" class="md-nav__link">
+    CNN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnn" class="md-nav__link">
+    RNN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    机器学习
+  </a>
+  
+    <nav class="md-nav" aria-label="机器学习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    基础
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    集成学习
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    特征工程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    其他（分方向）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    数据结构与算法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    二叉树类
+  </a>
+  
+    <nav class="md-nav" aria-label="二叉树类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    搜索回溯
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    概率题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    动态规划
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    字符串
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    数组、二分、快排系列
+  </a>
+  
+    <nav class="md-nav" aria-label="数组、二分、快排系列">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    链表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    排序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    海量数据题
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">算法工程师面试<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">深度学习<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">模型评估方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Accuracy作为指标有哪些局限性？</li>
+<li>ROC曲线和PR曲线各是什么？</li>
+<li>编程实现AUC的计算，并指出复杂度？</li>
+<li>AUC指标有什么特点？放缩结果对AUC是否有影响？</li>
+<li>余弦距离与欧式距离有什么特点？</li>
+</ul>
+<h3 id="_4">基本方法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>如何划分训练集？如何选取验证集？</li>
+<li>什么是偏差和方差？</li>
+<li>什么是过拟合？深度学习解决过拟合的方法有哪</li>
+<li>解决欠拟合的方法有哪些？</li>
+<li>深度模型参数调整的一般方法论？</li>
+</ul>
+<h3 id="_5">优化方法<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>简述了解的优化器，发展综述？</li>
+<li>常用的损失函数有哪些？分别适用于什么场景？</li>
+<li>梯度下降与拟牛顿法的异同？</li>
+<li>L1和L2正则分别有什么特点？为何L1稀疏？</li>
+</ul>
+<h3 id="_6">深度学习基础<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>以一层隐层的神经网络，relu激活，MSE作为损失函数推导反向传播</li>
+<li>NN的权重参数能否初始化为0？</li>
+<li>什么是梯度消失和梯度爆炸？</li>
+<li>常用的激活函数，导数？</li>
+<li>relu的有优点？又有什么局限性？他们的系列改进方法是啥？</li>
+<li>sigmoid和tanh为什么会导致梯度消失？</li>
+<li>一个隐层需要多少节点能实现包含n元输入的任意布尔函数？</li>
+<li>多个隐层实现包含n元输入的任意布尔函数，需要多少节点和网络层？</li>
+<li>dropout为何能防止过拟合？</li>
+<li>dropout和BN 在前向传播和方向传播阶段的区别？</li>
+</ul>
+<h3 id="cnn">CNN<a class="headerlink" href="#cnn" title="Permanent link">&para;</a></h3>
+<ul>
+<li>给定卷积核的尺寸，特征图大小计算方法？</li>
+<li>网络容量计算方法</li>
+<li>共享参数有什么优点</li>
+<li>常用的池化操作有哪些？有什么特点？</li>
+<li>CNN如何用于文本分类？</li>
+<li>resnet提出的背景和核心理论是？</li>
+<li>空洞卷积是什么？有什么应用场景？</li>
+</ul>
+<h3 id="rnn">RNN<a class="headerlink" href="#rnn" title="Permanent link">&para;</a></h3>
+<ul>
+<li>简述RNN，LSTM，GRU的区别和联系</li>
+<li>画出lstm的结构图，写出公式</li>
+<li>RNN的梯度消失问题？如何解决？</li>
+<li>lstm中是否可以用relu作为激活函数？</li>
+<li>lstm各个门分别使用什么激活函数？</li>
+<li>简述seq2seq模型？</li>
+<li>seq2seq在解码时候有哪些方法？</li>
+<li>Attention机制是什么？</li>
+</ul>
+<h2 id="_7">机器学习<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">基础<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>样本不均衡如何处理？</li>
+<li>什么是生成模型什么是判别模型？</li>
+</ul>
+<h3 id="_9">集成学习<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>集成学习的分类？有什么代表性的模型和方法？</li>
+<li>如何从偏差和方差的角度解释bagging和boosting的原理？</li>
+<li>GBDT的原理？和Xgboost的区别联系？</li>
+<li>adaboost和gbdt的区别联系？</li>
+</ul>
+<h3 id="_10">模型<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>手推LR、Kmeans、SVM</li>
+<li>简述ridge和lasson的区别和联系</li>
+<li>树模型如何调参</li>
+<li>树模型如何剪枝？</li>
+<li>是否存一定存在参数，使得SVM的训练误差能到0</li>
+<li>逻辑回归如何处理多分类？</li>
+<li>决策树有哪些划分指标？区别与联系？</li>
+<li>简述SVD和PCA的区别和联系？</li>
+<li>如何使用梯度下降方法进行矩阵分解？</li>
+<li>LDA与PCA的区别与联系？</li>
+</ul>
+<h3 id="_11">特征工程<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>常用的特征筛选方法有哪些？</li>
+<li>文本如何构造特征？</li>
+<li>类别变量如何构造特征？</li>
+<li>连续值变量如何构造特征？</li>
+<li>哪些模型需要对特征进行归一化？</li>
+<li>什么是组合特征？如何处理高维组合特征？</li>
+</ul>
+<h3 id="_12">其他（分方向）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>word2vec的原理，glove的原理，fasttext的原理？</li>
+<li>cbow和skipgram如何选择？</li>
+<li>了解elmo和bert吗？简述与word embedding的联系和区别</li>
+<li>图像和文本和语音数据各有哪些数据增强方法？</li>
+<li>rcnn、fatse rcnn、fatser rcnn、mask rcnn的原理？</li>
+<li>介绍resnet和GoogLeNet中的inception module的结构？</li>
+<li>介绍yolo和ssd ？</li>
+<li>介绍FM，FFM，deepFM，deepWide.</li>
+<li>机器翻译如何解决oov？</li>
+<li>等等</li>
+</ul>
+<h2 id="_13">数据结构与算法<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h2 id="_14">二叉树类<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<ul>
+<li>前中后的非递归？</li>
+<li>层次遍历，之字遍历？</li>
+<li>二叉树的序列化与反序列化</li>
+<li>前中，后中遍历结果恢复二叉树</li>
+<li>排序二叉树的序列化</li>
+<li>二叉树的直径</li>
+<li>二叉树的路径和为定值的路径</li>
+<li>翻转、复制二叉树</li>
+<li>排序二叉树转双向链表</li>
+<li>判断二叉树是否相同？判断一棵树是不是另一棵树的子树？</li>
+</ul>
+<h3 id="_15">搜索回溯<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>八皇后，全排列，组合</li>
+<li>重复数字的排列，重复数字的组合</li>
+<li>图的搜索</li>
+<li>A star</li>
+</ul>
+<h3 id="_16">概率题<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ul>
+<li>用rand7构造rand10</li>
+<li>轮盘赌</li>
+<li>三角形内等概论随机选点</li>
+<li>等等</li>
+</ul>
+<h3 id="_17">动态规划<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>编辑距离</li>
+<li>背包</li>
+<li>LCS</li>
+</ul>
+<h2 id="_18">字符串<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<ul>
+<li>给定字符串是否符合正则表达式XXX</li>
+<li>给定字符串是否是数字？</li>
+<li>KMP</li>
+<li>超大数相加</li>
+</ul>
+<h2 id="_19">数组、二分、快排系列<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<ul>
+<li>旋转数组查找</li>
+<li>数组中的topk</li>
+<li>旋转打印数组</li>
+<li>行列递增矩阵查找数字</li>
+<li>查找出现超过一半的数字</li>
+<li>查找和为定值的两个数</li>
+</ul>
+<h3 id="_20">链表<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<ul>
+<li>翻转链表</li>
+<li>两个链表是否有交点</li>
+<li>一个链表是否有环</li>
+<li>链表的倒数k个节点</li>
+<li>合并链表</li>
+<li>逆序打印链表</li>
+</ul>
+<h3 id="_21">排序<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>各种排序的复杂度最优最差平均</li>
+<li>堆排序topk</li>
+<li>快排的变化</li>
+</ul>
+<h2 id="_22">海量数据题<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<ul>
+<li>海量日志的出现最多的10个字符串</li>
+<li>10亿个1-10的数字排序</li>
+<li>trie树</li>
+<li>hashmap</li>
+<li>布隆过滤器</li>
+<li>bitmap</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../FAQ/readme/" class="md-footer__link md-footer__link--prev" aria-label="Previous: QA" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              QA
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+    
+  </body>
+</html>
